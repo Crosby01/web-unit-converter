@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit Converter</title>
+</head>
+<body>
+
+    <h1>Length Converter</h1>
+
+    <button onclick="setType('length')">Length</button>
+
+    <button onclick="setType('weight')">Weight</button>
+
+    <button onclick="setType('temperature')">Temperature</button>
+
+    <input type="number" id="value" placeholder="Enter value">
+
+    <select id="from">
+        <option value="m">Meters</option>
+        <option value="cm">Centimeters</option>
+        <option value="ft">Feet</option>
+    </select>
+
+    <select id="to">
+        <option value="m">Meters</option>
+        <option value="cm">Centimeters</option>
+        <option value="ft">Feet</option>
+    </select>
+
+
+    <button onclick="convert()">Convert</button>
+
+    <button onclick="resetFields()">Reset</button>
+    
+
+    <h2 id="result"></h2>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
